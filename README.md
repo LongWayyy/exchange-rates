@@ -59,7 +59,6 @@ async getCurrentAndPreviousRates() {
 ##app.js               
 #  Главный файл с 3мя эндпоинтами, currency - курсы валют, history - история запросов, stats - статистика
 Что делает:
-
 1.Принимает запросы от фронтенда
 2.Вызывает сервис ЦБ для получения курсов
 3.Сохраняет данные в MongoDB
@@ -69,10 +68,15 @@ async getCurrentAndPreviousRates() {
 
 ##frontend/index.html  
 Основные функции:
-
 1.fetchCurrencyRates() - запрос курсов
 2.displayCurrencyRates() - карточки валют
-3.getHistory() - история запросов 
+3.getHistory() - история запросов
+
+##History.js
+Описывает данные и структуру их хранения
+
+
+
 
 
 
