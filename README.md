@@ -35,7 +35,11 @@ currency-app/
 │   ├── .env                     #  Настройки окружения
 │   └── package.json            
 └── frontend/index.html          #  Весь фронтенд
-№№ Коротко о файлах
+
+
+
+
+
 ## currencyController.js
 // Бизнес-логика:
 async getCurrencyRates(req, res) {
@@ -43,6 +47,7 @@ async getCurrencyRates(req, res) {
   2. Сохранить в БД  
   3. Вернуть ответ
 }
+
 ##cbrService.js
 async getCurrentAndPreviousRates() {
   1. Запрос к API ЦБ
@@ -50,25 +55,28 @@ async getCurrentAndPreviousRates() {
   3. Поиск рабочего дня
 }
 
+
 ##app.js               
 #  Главный файл с 3мя эндпоинтами, currency - курсы валют, history - история запросов, stats - статистика
 Что делает:
 
-Принимает запросы от фронтенда
+1.Принимает запросы от фронтенда
 
-Вызывает сервис ЦБ для получения курсов
+2.Вызывает сервис ЦБ для получения курсов
 
-Сохраняет данные в MongoDB
+3.Сохраняет данные в MongoDB
 
-Возвращает JSON ответ
+4.Возвращает JSON ответ
+
+
 
 ##frontend/index.html  
 Основные функции:
 
-fetchCurrencyRates() - запрос курсов
+1.fetchCurrencyRates() - запрос курсов
 
-displayCurrencyRates() - карточки валют
+2.displayCurrencyRates() - карточки валют
 
+3.getHistory() - история запросов 
 
-getHistory() - история запросов 
 
