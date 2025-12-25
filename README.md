@@ -76,6 +76,18 @@ async getCurrentAndPreviousRates() {
 Описывает данные и структуру их хранения
 
 
+## Принцип хождения данных
+
+1. Пользователь → Нажимает кнопку       
+2.Frontend → запрос на http://localhost:3000/api/v1/currency
+3. Backend → Принимает запрос → Вызывает cbrService    
+4. cbrService → Запрашивает API ЦБ → XML → JSON     
+5. Backend → Сохраняет в MongoDB → Возвращает JSON            
+6. Frontend → Отображает карточки валют 
+
+
+
+
 
 
 
