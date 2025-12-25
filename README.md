@@ -61,11 +61,8 @@ async getCurrentAndPreviousRates() {
 Что делает:
 
 1.Принимает запросы от фронтенда
-
 2.Вызывает сервис ЦБ для получения курсов
-
 3.Сохраняет данные в MongoDB
-
 4.Возвращает JSON ответ
 
 
@@ -74,9 +71,8 @@ async getCurrentAndPreviousRates() {
 Основные функции:
 
 1.fetchCurrencyRates() - запрос курсов
-
 2.displayCurrencyRates() - карточки валют
-
 3.getHistory() - история запросов 
+
 
 
