@@ -5,10 +5,9 @@
 ## Стек технологий
 - Backend: Node.js, Express, MongoDB
 - Frontend: Vue.js
-- Дополнительно: Mongo Compose
+- Дополнительно: MongoDB Compose
 
-## Установка и запуск
-
+## Запуск
 
 1. Запуск MongoDB локально
 2. Настройка backend:
@@ -36,6 +35,7 @@ currency-app/
 │   ├── .env                     #  Настройки окружения
 │   └── package.json            
 └── frontend/index.html          #  Весь фронтенд
+№№ Коротко о файлах
 ## currencyController.js
 // Бизнес-логика:
 async getCurrencyRates(req, res) {
@@ -71,3 +71,4 @@ displayCurrencyRates() - карточки валют
 
 
 getHistory() - история запросов 
+
