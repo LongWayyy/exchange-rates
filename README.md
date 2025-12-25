@@ -24,19 +24,19 @@ currency-app/
 │   ├── src/
 │   │   ├── controllers/          #  Обрабатывает логику приложения
 │   │   │   └── currencyController.js
-│   │   ├── routes/               #  Маршруты (роутинг) Связывает URL с контроллерами
-│   │   │   └── currency.js       # Куда идти для получения истории и курсов
+│   │   ├── routes/               #  Маршруты  
+│   │   │   └── currency.js       # Куда идти для получения истории и курсов, связывает URL с контроллерами
 │   │   ├── services/             
 │   │   │   └── cbrService.js    # Запрос API
 │   │   ├── models/               
 │   │   │   └── History.js       # Описание как хранить данные в БД
-│   │   ├── config/               #  Конфигурация
-│   │   │   └── database.js
-│   │   └── app.js               #  Главный файл
+│   │   ├── config/               
+│   │   │   └── database.js      #Работа с базой данных
+│   │   └── app.js               #  Главный файл 
 │   ├── .env                     #  Настройки окружения
-│   └── package.json             #  Зависимости
+│   └── package.json            
 └── frontend/index.html          #  Весь фронтенд
-## currencyController.js 
+## currencyController.js
 // Бизнес-логика:
 async getCurrencyRates(req, res) {
   1. Получить данные из сервиса
@@ -68,5 +68,6 @@ async getCurrentAndPreviousRates() {
 fetchCurrencyRates() - запрос курсов
 
 displayCurrencyRates() - карточки валют
+
 
 getHistory() - история запросов 
